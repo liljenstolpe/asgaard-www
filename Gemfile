@@ -6,7 +6,7 @@ group :development do
 end
 
 gem 'sinatra', '~> 1.3.5'
-gem 'rake', '~> 0.9'
+gem 'rake'
 gem 'rack', '~> 1.4.1'
 gem 'jekyll', '~> 0.12'
 gem 'rdiscount', '~> 1.6.8'
