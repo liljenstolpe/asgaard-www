@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>test page - Title TBD</title>
+  <title>test page - Purposely missing the forest for the trees</title>
   <meta name="author" content="Christopher Liljenstolpe">
 
   
-  <meta name="description" content=" Test Page 2013-03-12 14.05.1363122300 -0700 (PDT) 2013-03-12 14.05.1363122300 -0700 (PDT) Tweet Recent Posts ">
+  <meta name="description" content="Test Page 2013-03-12 14.05 -0700 (PDT) 2013-03-12 14.05 -0700 (PDT) Tweet Comments Please enable JavaScript to view the comments powered by Disqus. &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +21,7 @@
   <link rel="canonical" href="http://www.asgaard.org//test-page.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Title TBD" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="Purposely missing the forest for the trees" type="application/atom+xml">
   <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
@@ -30,14 +30,26 @@
   <script src="/javascripts/ender.js"></script>
   <script src="/javascripts/octopress.js" type="text/javascript"></script>
   
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-37549754-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
 
 </head>
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">Title TBD</a></h1>
+  <h1><a href="/">Purposely missing the forest for the trees</a></h1>
   
-    <h2>Random Musings</h2>
+    <h2>(Ir)relevant musings on multiple topics</h2>
   
 </hgroup>
 
@@ -79,7 +91,7 @@
   
 
 
-<time datetime="2013-03-12T14:05:00-07:00" pubdate data-updated="true">2013-03-12 14.05.1363122300 -0700 (PDT)</time></p>
+<time datetime="2013-03-12T14:05:00-07:00" pubdate data-updated="true">2013-03-12 14.05 -0700 (PDT)</time></p>
   </header>
   
   
@@ -100,15 +112,19 @@
   
 
 
-<time datetime="2013-03-12T14:05:00-07:00" pubdate data-updated="true">2013-03-12 14.05.1363122300 -0700 (PDT)</time>
+<time datetime="2013-03-12T14:05:00-07:00" pubdate data-updated="true">2013-03-12 14.05 -0700 (PDT)</time>
         
       </p>
       
         <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.asgaard.org//test-page.html" data-via="" data-counturl="http://www.asgaard.org//test-page.html" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.asgaard.org//test-page.html" data-via="liljenstolpe" data-counturl="http://www.asgaard.org//test-page.html" >Tweet</a>
   
   
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
   
 </div>
 
@@ -116,6 +132,12 @@
     </footer>
   
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -125,11 +147,69 @@
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
+      <li class="post">
+        <a href="/blog/2013/04/22/this-is-a-test/">This is a test</a>
+      </li>
+    
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/liljenstolpe">@liljenstolpe</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'liljenstolpe',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("liljenstolpe", 4, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/liljenstolpe" class="twitter-follow-button" data-show-count="false">Follow @liljenstolpe</a>
+  
 </section>
 
 
 
+<section class="googleplus">
+  <h1>
+    <a href="https://plus.google.com/liljenstolpe@gmail.com?rel=author">
+      <img src="http://www.google.com/images/icons/ui/gprofile_button-32.png" width="32" height="32">
+      Google+
+    </a>
+  </h1>
+</section>
 
 
 
@@ -147,9 +227,42 @@
 </footer>
   
 
+<script type="text/javascript">
+      var disqus_shortname = 'asgaard';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://www.asgaard.org//test-page.html';
+        var disqus_url = 'http://www.asgaard.org//test-page.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
 
 
 
